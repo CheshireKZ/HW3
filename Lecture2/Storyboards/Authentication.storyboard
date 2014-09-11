@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Mdr-Hy-CZw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0Le-Uc-LOi">
+            <objects>
+                <navigationController id="Mdr-Hy-CZw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wsi-v4-wKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GwI-yq-gtD" kind="relationship" relationship="rootViewController" id="1kb-IL-eZw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5k-Sg-QYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-557" y="54"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ye8-Hn-C61">
+            <objects>
+                <viewController id="GwI-yq-gtD" customClass="LoginViewController" customModule="Lecture2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Uj-pG-Pjz"/>
+                        <viewControllerLayoutGuide type="bottom" id="dWb-02-gJA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39p-Fz-iEc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваш email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-BI-QiT">
+                                <rect key="frame" x="16" y="86" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваш пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-OA-eJ8">
+                                <rect key="frame" x="16" y="136" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-3G-rTZ">
+                                <rect key="frame" x="16" y="218" width="288" height="30"/>
+                                <state key="normal" title="Ой, хочу зарегистрироваться">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iT5-RM-9jV" kind="push" id="KvF-9B-kI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuN-n3-fgI">
+                                <rect key="frame" x="16" y="174" width="288" height="30"/>
+                                <state key="normal" title="Зайти">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="GwI-yq-gtD" eventType="touchUpInside" id="ECD-JG-QuT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmp-OZ-K5C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zS5-hs-6FX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="som-n2-GMg">
+            <objects>
+                <viewController id="iT5-RM-9jV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Abp-Vn-Xk0"/>
+                        <viewControllerLayoutGuide type="bottom" id="cSr-Sh-p23"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Bb-3B-l0B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9l-t0-pBc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFT-Zk-ec4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="54"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
