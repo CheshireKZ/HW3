@@ -12,22 +12,34 @@
 	<dict>
 		<key>3EE494FF1DB4BCCC6EB74802BBC62CBDE55F61C5</key>
 		<string>https://github.com/MasterUpSwift/L2.git</string>
+		<key>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</key>
+		<string>https://github.com/CheshireKZ/HW3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Lecture2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3EE494FF1DB4BCCC6EB74802BBC62CBDE55F61C5</key>
+		<string>../../../L2</string>
+		<key>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MasterUpSwift/L2.git</string>
+	<string>https://github.com/CheshireKZ/HW3.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3EE494FF1DB4BCCC6EB74802BBC62CBDE55F61C5</string>
+	<string>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HW3</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
