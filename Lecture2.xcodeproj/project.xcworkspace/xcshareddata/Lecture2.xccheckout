@@ -12,6 +12,8 @@
 	<dict>
 		<key>3EE494FF1DB4BCCC6EB74802BBC62CBDE55F61C5</key>
 		<string>https://github.com/MasterUpSwift/L2.git</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>https://github.com/Alamofire/Alamofire.git</string>
 		<key>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</key>
 		<string>https://github.com/CheshireKZ/HW3.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>3EE494FF1DB4BCCC6EB74802BBC62CBDE55F61C5</key>
 		<string>../../../L2</string>
+		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
+		<string>../../../../Alamofire</string>
 		<key>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</key>
 		<string>../..</string>
 	</dict>
@@ -32,6 +36,14 @@
 	<string>A1887FFEBC99D3E5704591352F67A6FDA90BA1BE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Alamofire</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

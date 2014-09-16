@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import Alamofire
 
 class LecturesListController: UITableViewController {
+    
+    var items: NSArray?
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+   //     let s = Alamofire.request(.GET, "http://httpbin.org/get")
+  //      let s = Alamofire.request(.GET,"http://httpbin.org/get")
+       let s = Alamofire.request(.GET,"http://weekly.master-up.net/api/v1/lecture/list/")
+        Alamofire.request(.GET,"http://weekly.master-up.net/api/v1/lecture/list").responseJSON { (Request, Response, JSON, Error) -> Void in
+           
+            self.items = JSON as NSArray
+
+            self.tableView.reloadData()
+        }
+
+         println(s)
+    } 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -20,11 +34,17 @@ class LecturesListController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        if let count = self.items?.count {
+            return count
+        }
+        return 0
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LectureCell") as UITableViewCell
-        cell.textLabel?.text = "Лекция №\(indexPath.row + 1)"
+        if let item = self.items{
+            let newItem=item[indexPath.row] as NSDictionary
+        cell.textLabel?.text = newItem["name"] as String
+        }
         return cell
     }
     

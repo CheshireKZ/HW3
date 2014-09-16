@@ -24,6 +24,4 @@ class LoginViewController: UIViewController {
         navigationController!.dismissViewControllerAnimated(true, completion: nil)
         
     }
-
-    @IBOutlet weak var loginAction: UIButton!
 }
